@@ -1,0 +1,2 @@
+INSERT INTO com_baru(baru_cd,baru_nm,created_id,created_at) VALUES('BARU_TP_01','Baru Satu','admin',CURRENT_TIMESTAMP);
+INSERT INTO com_baru(baru_cd,baru_nm,created_id,created_at) VALUES('BARU_TP_02','Baru Dua','admin',CURRENT_TIMESTAMP);

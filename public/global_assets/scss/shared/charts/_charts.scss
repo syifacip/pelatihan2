@@ -1,0 +1,56 @@
+/* ------------------------------------------------------------------------------
+*
+*  # Chart styling
+*
+*  Charts base - container and sizing setup
+*
+* ---------------------------------------------------------------------------- */
+
+// Check if component is enabled
+@if $enable-charts {
+
+    // Container
+    .chart-container {
+        position: relative;
+        width: 100%;
+
+        // Add scroll
+        &.has-scroll {
+            overflow-x: scroll;
+            overflow-y: visible;
+            max-width: 100%;
+        }
+
+        // Add scroll for all charts on mobile to hide overflow
+        @include media-breakpoint-down(sm) {
+            overflow-x: scroll;
+            overflow-y: visible;
+            max-width: 100%;
+        }
+    }
+
+    // Chart itself
+    .chart {
+        position: relative;
+        display: block;
+        width: 100%;
+        @if $direction == 'RTL' {
+            /*rtl:ignore*/
+            direction: ltr;
+        }
+
+        // Give chart min width
+        &.has-minimum-width {
+       $    mkn-÷idth: $chart-min-÷idth; `      }
+    }Š
+    // Give ch`rt fixed height
+    .has-fixed-height {
+        height: &chart-container-heigjt;
+    }
+    // Pie sharts
+    .chart-pie {
+        sidth: 100%;
+        leight: $chart-contahner-height;
+     (  min-witth: &charô-pie-min-width;
+    }
+}
